@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <title>Product list with cart</title>
+    <!-- Tailwind & Css Linking Files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+  </head>
+  <body>
+    <div class="main relative">
+      <div class="container mx-auto p-4 laptop:flex laptop:gap-8">
+        <div class="desserts laptop:flex-1">
+          <h1 class="text-5xl font-bold mb-10">Desserts</h1>
+          <div
+            class="meals tablet:grid tablet:grid-cols-2 tablet:place-items-center laptop:grid-cols-3"
+          >
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 -translate-x-1/2 desk:-bottom-5 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48 tablet:-bottom-10"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity manipulate-quantity absolute">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 desk:-bottom-5 -translate-x-1/2 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity manipulate-quantity absolute">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 desk:-bottom-5 -translate-x-1/2 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity absolute manipulate-quantity">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 desk:-bottom-5 -translate-x-1/2 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity absolute manipulate-quantity">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 desk:-bottom-5 -translate-x-1/2 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity absolute manipulate-quantity">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="decrement manipulate-quantity absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 desk:-bottom-5 -translate-x-1/2 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity manipulate-quantity absolute">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 desk:-bottom-5 -translate-x-1/2 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity absolute manipulate-quantity">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 -translate-x-1/2 desk:-bottom-5 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity absolute manipulate-quantity">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+            <div class="meal mb-5">
+              <div class="image relative">
+                <img
+                  src="../product-list-with-cart-main/assets/images/image-waffle-mobile.jpg"
+                  alt=""
+                  class="main-image rounded-xl max-w-full"
+                />
+                <button
+                  class="add-to-card flex items-center gap-4 absolute left-1/2 -translate-x-1/2 desk:-bottom-5 tablet:-bottom-10 -bottom-5 bg-white py-3 px-7 font-bold rounded-3xl z-10 border border-primary w-48"
+                >
+                  <img
+                    src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                  <span class="add">Add to card</span>
+                  <img
+                    src="./assets/images/icon-increment-quantity.svg"
+                    class="manipulate-quantity increment absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                  <span class="quantity absolute manipulate-quantity">1</span>
+                  <img
+                    src="./assets/images/icon-decrement-quantity.svg"
+                    class="manipulate-quantity decrement absolute border bg-transparent flex items-center justify-center rounded-full"
+                  />
+                </button>
+              </div>
+              <div class="info">
+                <span class="category block mt-7"></span>
+                <h3 class="name font-bold text-lg"></h3>
+                <span class="price font-bold text-primary text-xl"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pay p-5 rounded-xl">
+          <h2 class="font-bold text-2xl text-primary mb-3">
+            Your Cart (<span class="orders text-primary">0</span>)
+          </h2>
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            class="block m-auto"
+            alt=""
+          />
+          <span class="text block font-bold mt-3 mb-5 text-center"
+            >Your added items will appear here</span
+          >
+          <div class="templates">
+            <div
+              class="template hidden items-center justify-between mb-5 pb-[10px]"
+            >
+              <div class="des">
+                <div class="sep">
+                  <span class="name font-bold text-sm"
+                    >Macaron Mix of Five</span
+                  >
+                </div>
+                <div class="calculation">
+                  <span class="times inline-block text-primary font-bold mr-3"
+                    ><span class="average"></span
+                  ></span>
+                  <span class="price inline-block mr-2"></span>
+                  <span class="total-order font-semibold"></span>
+                </div>
+              </div>
+              <img
+                src="./assets/images/icon-remove-item.svg"
+                class="remove-order cursor-pointer rounded-full border p-1 w-5"
+              />
+            </div>
+          </div>
+          <div class="complete-total hidden items-center justify-between mb-5">
+            <h4 class="font-semibold">Order Total</h4>
+            <span class="final-price font-bold text-3xl"></span>
+          </div>
+          <div
+            class="delivery hidden justify-center items-center gap-2 p-3 rounded-lg"
+          >
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p class="text font-semibold">
+              This is a <span class="font-bold">carbon-neutral</span> delivery
+            </p>
+          </div>
+          <button
+            class="confirmation hidden w-full mt-5 p-[10px] bg-primary text-white font-semibold rounded-3xl"
+          >
+            Confirm order
+          </button>
+        </div>
+        <div
+          class="confirm-order hidden duration-300 absolute bottom-0 left-0 z-50 px-4 pb-4 pt-7 w-full"
+        >
+          <img
+            src="./assets/images/icon-order-confirmed.svg"
+            class="block mb-5 w-14"
+            alt=""
+          />
+          <h2 class="font-bold mb-3" style="font-size: 2.75rem">
+            Order Confirmed
+          </h2>
+          <span>We hope you enjoy your food!</span>
+          <div class="bought-meals p-6 mt-5">
+            <div
+              class="bought-meal hidden items-center justify-between mb-3 pb-[15px]"
+            >
+              <div class="inf flex items-center gap-3">
+                <img src="" class="thumbnail w-14 rounded-md" alt="" />
+                <div class="text flex flex-col justify-center">
+                  <h4 class="name font-semibold"></h4>
+                  <div class="spans">
+                    <span class="times inline-block text-primary font-bold mr-3"
+                      ><span class="average"></span
+                    ></span>
+                    <span class="price inline-block mr-2"></span>
+                  </div>
+                </div>
+              </div>
+              <span class="total-order font-bold text-xl"></span>
+            </div>
+          </div>
+          <div
+            class="order-total flex items-center justify-between mb-5 px-6 pt-6 pb-8"
+          >
+            <h4 class="font-semibold">Order Total</h4>
+            <span class="final-price font-bold text-3xl"></span>
+          </div>
+          <button
+            class="new-order w-full mt-5 p-[10px] bg-primary text-white font-semibold rounded-3xl capitalize"
+          >
+            Start new order
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart
+
+  Your Cart ( Quantity )
+ -->
+    <script src="script.js"></script>
+  </body>
+</html>
