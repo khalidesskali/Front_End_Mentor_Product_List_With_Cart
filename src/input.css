@@ -84,7 +84,7 @@
     line-height: 1.1;
   }
   .confirm-order > span {
-    color: var(--rose-300)
+    color: var(--rose-300);
   }
   .bought-meals {
     background-color: var(--rose-100);
@@ -104,9 +104,12 @@
     background: var(--rose-100);
     border-radius: 0 0 12px 12px;
   }
-  @media (min-width: 576px) {
+  .pay {
+    height: fit-content;
+  }
+  @media (min-width: 640px) {
     .meals .meal .image {
-      width: 280px;
+      width: 255px;
       height: 200px;
       margin-block-end: 50px;
     }
@@ -114,10 +117,36 @@
       height: calc(100% + 20px);
     }
   }
+  @media (min-width: 768px) {
+    .meals .meal .image {
+      width: 300px;
+      height: 240px;
+      margin-block-end: 35px;
+    }
+  }
   @media (min-width: 1280px) {
     .meals .meal .image {
       width: 350px;
       height: 300px;
+    }
+    .confirm-order {
+      height: fit-content;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    .confirm-order {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 600px;
+      height: fit-content;
+      border-radius: 20px;
     }
   }
 }
